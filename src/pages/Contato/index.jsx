@@ -86,7 +86,6 @@ function Contato() {
             </main>
 
             <footer>
-                <img src={logoBranco} alt="Logo Green Barber" />
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>

@@ -94,7 +94,6 @@ function Home() {
             </main>
 
             <footer>
-                <img src={logoBranco} alt="Logo Branco da Green Barber" />
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>
