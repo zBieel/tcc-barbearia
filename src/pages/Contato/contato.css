@@ -109,3 +109,15 @@ footer {
     font-size: 20px;
     font-family: arial;
 }
+
+.container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 10px;
+}

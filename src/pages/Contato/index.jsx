@@ -8,6 +8,7 @@ function Contato() {
     return (
         <div>
             <main>
+                <div class="container">
                 <form>
                     <label htmlFor="nomesobrenome">Nome e sobrenome</label>
                     <input type="text" id="nomesobrenome" className="input-padrao" required placeholder="Seu nome completo" />
@@ -21,30 +22,11 @@ function Contato() {
                     <label htmlFor="mensagem">Mensagem</label>
                     <textarea cols="56" rows="10" id="mensagem" className="input-padrao" required placeholder="..."></textarea>
 
-                    <fieldset>
-                        <legend>Como prefere o nosso contato?</legend>
-
-                        <label htmlFor="radio-email"><input type="radio" name="contato" value="email" id="radio-email" /> Email</label>
-
-                        <label htmlFor="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" /> Telefone</label>
-
-                        <label htmlFor="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" defaultChecked /> Whatsapp</label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Qual horário prefere ser atendido?</legend>
-                        <select className="caixa-horarios">
-                            <option>Manhã</option>
-                            <option>Tarde</option>
-                            <option>Noite</option>
-                        </select>
-                    </fieldset>
-
                     <label className="checkbox"><input type="checkbox" defaultChecked /> Gostaria de receber nossas novidades por email?</label>
 
                     <input type="submit" value="Enviar formulário" className="enviar" />
                 </form>
-
+                </div>
                 <table>
                     <thead>
                         <tr>
