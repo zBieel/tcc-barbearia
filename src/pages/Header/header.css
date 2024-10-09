@@ -16,3 +16,10 @@ header{
     border-radius: 4px;
     font-size: 25px;
 }
+
+header img {
+    height: 135px; 
+    width: auto;  
+    margin-left: -100px;
+}
+
