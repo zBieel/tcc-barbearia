@@ -36,7 +36,7 @@ function Produtos() {
 
             <footer>
                 <img src={logoBranco} alt="Logo Barbearia Alura" />
-                <p className="copyright">&copy; Copyright Barbearia Alura - 2023</p>
+                <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>
     );
