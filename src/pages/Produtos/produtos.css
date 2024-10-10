@@ -95,3 +95,9 @@ footer {
     color: #ffffff;
     font-size: 15px;
 }
+
+footer {
+    text-align: center;
+    background: url("../../assets/img/bg.jpg");
+    padding: 10px 0; /* Reduza o padding vertical */
+}
