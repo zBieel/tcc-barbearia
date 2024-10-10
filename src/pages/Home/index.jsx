@@ -8,7 +8,7 @@ import './home.css';
 import banner from '../../assets/img/banner.jpg';
 import utensilios from '../../assets/img/utensilios.jpg';
 import beneficiosImg from '../../assets/img/beneficios.jpg';
-import logoBranco from '../../assets/img/logo-branco.png';
+import logo from '../../assets/img/logo.png';
 
 function Home() {
     return (
@@ -94,6 +94,7 @@ function Home() {
             </main>
 
             <footer>
+                <img src={logo} alt="Logo Green Barber" />
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>

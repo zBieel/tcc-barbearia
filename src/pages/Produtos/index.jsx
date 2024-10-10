@@ -2,11 +2,10 @@ import './produtos.css';
 import { Link } from 'react-router-dom'; // Para navegação
 
 // Importação das imagens
-import logo from '../../assets/img/logo.png';
 import cabelo from '../../assets/img/cabelo.jpg';
 import barba from '../../assets/img/barba.jpg';
 import cabeloBarba from '../../assets/img/cabelo+barba.jpg';
-import logoBranco from '../../assets/img/logo-branco.png';
+import logo from '../../assets/img/logo.png';
 
 function Produtos() {
     return (
@@ -35,7 +34,7 @@ function Produtos() {
             </main>
 
             <footer>
-                <img src={logoBranco} alt="Logo Barbearia Alura" />
+                <img src={logo} alt="Logo Green Barber" />
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>
