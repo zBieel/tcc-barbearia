@@ -3,7 +3,7 @@ import logo from '../../assets/img/logo.png';
 
 function Contato() {
     return (
-        <div>
+        <div className="contato-page">
             <main>
                 <div className="container">
                     <h1>Insira seus dados para contato!</h1>
@@ -27,44 +27,7 @@ function Contato() {
 
                             <input type="submit" value="Enviar formulário" className="enviar" />
                         </form>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Dia</th>
-                                    <th>Horário</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Domingo</td>
-                                    <td>Fechado</td>
-                                </tr>
-                                <tr>
-                                    <td>Segunda</td>
-                                    <td>8h - 20h</td>
-                                </tr>
-                                <tr>
-                                    <td>Terça</td>
-                                    <td>8h - 20h</td>
-                                </tr>
-                                <tr>
-                                    <td>Quarta</td>
-                                    <td>8h - 20h</td>
-                                </tr>
-                                <tr>
-                                    <td>Quinta</td>
-                                    <td>8h - 20h</td>
-                                </tr>
-                                <tr>
-                                    <td>Sexta</td>
-                                    <td>8h - 20h</td>
-                                </tr>
-                                <tr>
-                                    <td>Sábado</td>
-                                    <td>Fechado</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                       
                     </div>
                 </div>
             </main>
