@@ -1,13 +1,14 @@
 import './contato.css';
 import logo from '../../assets/img/logo.png';
-import logoBranca from '../../assets/img/WhiteLogo.png';
+import logoBranca from '../../assets/img/logoBranca.png';
 
 function Contato() {
     return (
         <div className="contato-page">
             <main>
+            <h1>INSIRA SEUS DADOS PARA CONTATO</h1>
                 <div className="container">
-                    <h1>Insira seus dados para contato!</h1>
+                    
                     <div className="form-horarios">
                         <form>
                             <label htmlFor="nomesobrenome">Nome e sobrenome</label>
@@ -32,7 +33,7 @@ function Contato() {
             </main>
 
             <footer>
-                <img src={logoBranca} alt="Logo Barbearia Alura" />
+                <img src={logoBranca} alt="Logo Barbearia Alura" className="footer-logo"/>
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>

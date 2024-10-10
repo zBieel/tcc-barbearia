@@ -8,7 +8,7 @@ import './home.css';
 import banner from '../../assets/img/banner.jpg';
 import utensilios from '../../assets/img/utensilios.jpg';
 import beneficiosImg from '../../assets/img/beneficios.jpg';
-import logoBranca from '../../assets/img/WhiteLogo.png';
+import logoBranca from '../../assets/img/logoBranca.png';
 
 function Home() {
     return (
@@ -94,7 +94,7 @@ function Home() {
             </main>
 
             <footer>
-                <img src={logoBranca} alt="Logo Barbearia Alura" />
+                <img src={logoBranca} alt="Logo Barbearia Alura" className="footer-logo"/>
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>
