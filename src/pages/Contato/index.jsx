@@ -1,5 +1,6 @@
 import './contato.css';
 import logo from '../../assets/img/logo.png';
+import logoBranca from '../../assets/img/WhiteLogo.png';
 
 function Contato() {
     return (
@@ -21,9 +22,7 @@ function Contato() {
                             <label htmlFor="mensagem">Mensagem</label>
                             <textarea cols="56" rows="10" id="mensagem" className="input-padrao" required placeholder="..."></textarea>
 
-                            <label className="checkbox">
-                                <input type="checkbox" defaultChecked /> Gostaria de receber nossas novidades por email?
-                            </label>
+                    
 
                             <input type="submit" value="Enviar formulário" className="enviar" />
                         </form>
@@ -33,7 +32,7 @@ function Contato() {
             </main>
 
             <footer>
-                <img src={logo} alt="Logo Barbearia Alura" />
+                <img src={logoBranca} alt="Logo Barbearia Alura" />
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>

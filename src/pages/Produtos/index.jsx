@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'; // Para navegação
 import cabelo from '../../assets/img/cabelo.jpg';
 import barba from '../../assets/img/barba.jpg';
 import cabeloBarba from '../../assets/img/cabelo+barba.jpg';
-import logo from '../../assets/img/logo.png';
+import logoBranca from '../../assets/img/WhiteLogo.png';
 
 function Produtos() {
     return (
@@ -34,7 +34,7 @@ function Produtos() {
             </main>
 
             <footer>
-                <img src={logo} alt="Logo Green Barber" />
+                <img src={logoBranca} alt="Logo Barbearia Alura" />
                 <p className="copyright">&copy; Copyright Green Barber - 2024</p>
             </footer>
         </div>
