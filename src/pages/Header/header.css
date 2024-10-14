@@ -1,33 +1,107 @@
-header{
+/* Estilo base do header */
+header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between; /* Garante que os elementos ocupem todo o espaço */
+    width: 100%; /* Garante 100% da largura da tela */
+    padding: 0 20px; /* Adiciona um espaçamento interno nas laterais */
     height: 100px;
     background-color: #474747;
+    box-sizing: border-box; /* Garante que padding seja incluído no cálculo de largura */
 }
 
-.nav{
+.nav {
     text-decoration: none;
     cursor: pointer;
     background-color: rgba(26, 26, 26, 0);
     padding: 5px 14px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     border-radius: 4px;
     font-size: 25px;
-    
 }
 
-.nav:hover{
+.nav:hover {
     transform: scale(1.1);
 }
 
 header img {
-    height: 135px; 
-    width: auto;  
-    margin-left: -100px;
+    height: 135px;
+    width: auto;
+    margin-left: 0; /* Remove o valor negativo para evitar problemas de layout */
 }
 
-.logo{
+.logo {
     height: 150px;
+}
+
+/* Ajustes responsivos para o header */
+
+/* Telas grandes (desktop) */
+@media (max-width: 1440px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .nav {
+        font-size: 22px;
+    }
+
+    header img {
+        height: 120px;
+    }
+}
+
+/* Laptops (1024px a 1440px) */
+@media (max-width: 1024px) {
+    header {
+        height: 90px;
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+
+    header img {
+        height: 110px;
+    }
+}
+
+/* Tablets (768px a 1024px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0; /* Reduz o padding para tablets */
+    }
+
+    .nav {
+        font-size: 18px;
+    }
+
+    header img {
+        height: 100px;
+    }
+
+    .logo {
+        height: 120px;
+    }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0; /* Mantém um padding menor para celulares */
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    header img {
+        height: 80px;
+    }
 }
