@@ -4,14 +4,14 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import './contato.css';
 import logoBranca from '../../assets/img/logoBranca.png';
-import api from "../../services/api"; // Ajuste o caminho conforme necessário
+import api from "../../services/api";
 
 const Contato = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = async (data) => {
     try {
-      const response = await api.post("users", { // Ajuste a rota conforme necessário
+      const response = await api.post("users/cliente", {
         nome: data.nome,
         email: data.email,
         telefone: data.telefone,
@@ -19,10 +19,10 @@ const Contato = () => {
         tipoUsuario: "Cliente", 
       });
       console.log(response.data);
-      toast.success("Formulário enviado com sucesso!"); // Notificação de sucesso
+      toast.success("Formulário enviado com sucesso!");
     } catch (error) {
       console.log(error);
-      toast.error("Erro ao enviar o formulário. Tente novamente."); // Notificação de erro
+      toast.error("Erro ao enviar o formulário. Tente novamente.");
     }
   };
 
@@ -34,7 +34,7 @@ const Contato = () => {
         <div className="container">
           <div className="form-horarios">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <label htmlFor="nomesobrenome">Nome e sobrenome</label>
+              <label htmlFor="nome">Nome e sobrenome</label>
               <input
                 type="text"
                 id="nome"
@@ -62,7 +62,7 @@ const Contato = () => {
 
               <label htmlFor="telefone">Telefone</label>
               <input
-                type="tel"
+                type="text"
                 id="telefone"
                 className="input-padrao"
                 {...register("telefone", { required: "Telefone é obrigatório." })}
